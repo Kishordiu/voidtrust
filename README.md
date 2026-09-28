@@ -1,73 +1,68 @@
-# Welcome to your Lovable project
+# VoidTrust
 
-## Project info
+> **A zero-trust security architecture for connected devices.**
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+VoidTrust explores continuous cryptographic verification, device identity, tamper response and dynamic trust enforcement for IoT and cyber-physical systems.
 
-## How can I edit this code?
+## Core idea
 
-There are several ways of editing your application.
+Traditional IoT systems often treat a device as trusted after onboarding. VoidTrust explores the opposite model: **trust is continuously evaluated and can be revoked when device behaviour or physical state becomes suspicious.**
 
-**Use Lovable**
+## Security model
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+```text
+Device Identity
+      ↓
+Signed / authenticated request
+      ↓
+Verification + replay protection
+      ↓
+Trust-state evaluation
+      ↓
+Allow / restrict / lockdown
+      ↓
+Operator visibility
+```
 
-Changes made via Lovable will be committed automatically to this repo.
+## Implemented concepts
 
-**Use your preferred IDE**
+- Per-device cryptographic authentication
+- HMAC-SHA256 request verification
+- Timestamp-based replay protection
+- HTTPS transport
+- Dynamic trust states
+- Tamper-triggered compromise / lockdown concepts
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Hardware direction
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+The architecture is designed to accommodate secure boot, hardware-backed keys, secure elements and physical tamper sensors as the system evolves. These are documented design directions and should not be interpreted as hardware already present in every deployment.
 
-Follow these steps:
+## Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+React · TypeScript · Vite · Tailwind CSS · shadcn/ui · React Router · Recharts · Vitest
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Run locally
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Build:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm run build
+npm run preview
+```
 
-**Use GitHub Codespaces**
+## Status
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**Zero-trust IoT security prototype — evolving toward hardware-backed enforcement.**
 
-## What technologies are used for this project?
+## Author
 
-This project is built with:
+**K. Kishor Kumar** · [GitHub @Kishordiu](https://github.com/Kishordiu)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+<p align="center">Secure by design. Verify continuously.</p>
