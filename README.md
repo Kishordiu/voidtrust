@@ -1,68 +1,37 @@
-# VoidTrust
+# VOIDTRUST
 
-> **A zero-trust security architecture for connected devices.**
+![VOIDTRUST cinematic hero](https://capsule-render.vercel.app/api?type=rect&color=0:080808,100:202020&height=230&text=VOIDTRUST&fontColor=F3F3EE&fontSize=40&fontAlignY=38&desc=CONTINUOUS%20TRUST%20%2F%20CRYPTOGRAPHY&descColor=999991&descSize=12&descAlignY=66&animation=fadeIn)
 
-VoidTrust explores continuous cryptographic verification, device identity, tamper response and dynamic trust enforcement for IoT and cyber-physical systems.
+> **CONTINUOUS TRUST / CRYPTOGRAPHY.**
 
-## Core idea
+## THE PREMISE
 
-Traditional IoT systems often treat a device as trusted after onboarding. VoidTrust explores the opposite model: **trust is continuously evaluated and can be revoked when device behaviour or physical state becomes suspicious.**
+VoidTrust explores a connected-device security model where trust is continuously evaluated instead of granted once during onboarding.
 
-## Security model
+## THE EXPERIENCE
 
-```text
-Device Identity
-      ↓
-Signed / authenticated request
-      ↓
-Verification + replay protection
-      ↓
-Trust-state evaluation
-      ↓
-Allow / restrict / lockdown
-      ↓
-Operator visibility
-```
+**Identity starts the session.**  \n**Verification protects each request.**  \n**Trust can move from allow to restrict to lockdown.**
 
-## Implemented concepts
+## THE SYSTEM
 
-- Per-device cryptographic authentication
-- HMAC-SHA256 request verification
-- Timestamp-based replay protection
-- HTTPS transport
-- Dynamic trust states
-- Tamper-triggered compromise / lockdown concepts
+The architecture is organized around device identity, authenticated requests, verification and replay protection, followed by a dynamic trust decision and operator-facing response.
 
-## Hardware direction
+## THE STACK
 
-The architecture is designed to accommodate secure boot, hardware-backed keys, secure elements and physical tamper sensors as the system evolves. These are documented design directions and should not be interpreted as hardware already present in every deployment.
+Web control plane · cryptographic request verification · trust-state enforcement · responsive security UI
 
-## Stack
-
-React · TypeScript · Vite · Tailwind CSS · shadcn/ui · React Router · Recharts · Vitest
-
-## Run locally
+## RUN
 
 ```bash
-npm install
-npm run dev
+npm install\nnpm run dev
 ```
 
-Build:
+## PROJECT STATE
 
-```bash
-npm run build
-npm run preview
-```
+**Zero-trust architecture prototype**
 
-## Status
-
-**Zero-trust IoT security prototype — evolving toward hardware-backed enforcement.**
-
-## Author
-
-**K. Kishor Kumar** · [GitHub @Kishordiu](https://github.com/Kishordiu)
+The repository documents the capabilities that are actually implemented; future integrations are intentionally separated from the current product surface.
 
 ---
 
-<p align="center">Secure by design. Verify continuously.</p>
+<p align="center"><strong>K. KISHOR KUMAR</strong><br><sub>ENGINEERING / PRODUCT / SYSTEMS</sub></p>
