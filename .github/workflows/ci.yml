@@ -26,12 +26,12 @@ jobs:
       - name: Install locked dependencies
         shell: bash
         run: |
-          if [ -f package-lock.json ]; then
-            npm ci
-            echo "PACKAGE_RUNNER=npm" >> "$GITHUB_ENV"
-          elif [ -f bun.lock ] || [ -f bun.lockb ]; then
+          if [ -f bun.lock ] || [ -f bun.lockb ]; then
             bun install --frozen-lockfile
             echo "PACKAGE_RUNNER=bun" >> "$GITHUB_ENV"
+          elif [ -f package-lock.json ]; then
+            npm ci
+            echo "PACKAGE_RUNNER=npm" >> "$GITHUB_ENV"
           elif [ -f pnpm-lock.yaml ]; then
             corepack enable
             pnpm install --frozen-lockfile
