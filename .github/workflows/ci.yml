@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+      - name: Install locked dependencies
+        shell: bash
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+            echo "PACKAGE_RUNNER=npm" >> "$GITHUB_ENV"
+          elif [ -f bun.lock ] || [ -f bun.lockb ]; then
+            bun install --frozen-lockfile
+            echo "PACKAGE_RUNNER=bun" >> "$GITHUB_ENV"
+          elif [ -f pnpm-lock.yaml ]; then
+            corepack enable
+            pnpm install --frozen-lockfile
+            echo "PACKAGE_RUNNER=pnpm" >> "$GITHUB_ENV"
+          else
+            echo "::error::No supported lockfile found."
+            exit 1
+          fi
+      - name: Run available quality scripts
+        shell: bash
+        run: |
+          set -euo pipefail
+          for script in build lint test; do
+            if node -e "process.exit(require('./package.json').scripts?.['$script'] ? 0 : 1)"; then
+              echo "::group::npm script: $script"
+              "$PACKAGE_RUNNER" run "$script"
+              echo "::endgroup::"
+            else
+              echo "No '$script' script is defined; skipping it."
+            fi
+          done
