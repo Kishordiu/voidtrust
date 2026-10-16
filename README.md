@@ -10,7 +10,9 @@ VoidTrust explores a connected-device security model where trust is continuously
 
 ## THE EXPERIENCE
 
-**Identity starts the session.**  \n**Verification protects each request.**  \n**Trust can move from allow to restrict to lockdown.**
+**Identity starts the session.**  
+**Verification protects each request.**  
+**Trust can move from allow to restrict to lockdown.**
 
 ## THE SYSTEM
 
