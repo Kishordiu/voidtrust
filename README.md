@@ -1,5 +1,7 @@
 ![VOIDTRUST — bespoke brushed-metal project artwork](./assets/readme-metal-hero.svg)
 
+# VOIDTRUST
+
 > **CONTINUOUS TRUST / CRYPTOGRAPHY.**
 
 ## THE PREMISE
