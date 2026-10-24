@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="hero-title hero-desc">
+<title id="hero-title">VOIDTRUST — project artwork</title>
+<desc id="hero-desc">A tactile, brushed-titanium project banner with continuous trust / cryptography imagery, designed for the voidtrust repository.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06080B"/><stop offset=".46" stop-color="#151B21"/><stop offset="1" stop-color="#07090C"/></linearGradient>
+ <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38424B"/><stop offset=".13" stop-color="#C7CED3"/><stop offset=".23" stop-color="#59636D"/><stop offset=".39" stop-color="#E5E9EC"/><stop offset=".54" stop-color="#4B5660"/><stop offset=".7" stop-color="#929EA7"/><stop offset=".83" stop-color="#353D45"/><stop offset="1" stop-color="#C4CBD0"/></linearGradient>
+ <linearGradient id="accent" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#BBA8FF"/><stop offset="1" stop-color="#65D6E5"/></linearGradient>
+ <radialGradient id="halo"><stop offset="0" stop-color="#BBA8FF" stop-opacity=".23"/><stop offset="1" stop-color="#65D6E5" stop-opacity="0"/></radialGradient>
+ <pattern id="brush" width="7" height="7" patternUnits="userSpaceOnUse"><path d="M0 1.1 H7 M0 4.7 H7" stroke="#E3E9ED" stroke-opacity=".055" stroke-width=".7"/></pattern>
+ <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0 H0 V38" fill="none" stroke="#B9C6D0" stroke-opacity=".06" stroke-width=".7"/></pattern>
+</defs>
+<rect width="1200" height="440" fill="url(#bg)"/>
+<rect width="1200" height="440" fill="url(#grid)"/>
+<rect width="1200" height="440" fill="url(#brush)"/>
+<ellipse cx="940" cy="218" rx="290" ry="280" fill="url(#halo)"/>
+<g fill="none" stroke="#D8E0E7" stroke-opacity=".085" stroke-width="1.1">
+ <path d="M655 -50 C815 50 736 112 874 153 S1035 210 1255 81"/>
+ <path d="M636 -23 C794 77 713 138 854 177 S1040 236 1255 108"/>
+ <path d="M620 5 C770 103 691 163 837 202 S1045 263 1255 135"/>
+ <path d="M606 33 C748 128 670 189 819 227 S1050 290 1255 162"/>
+ <path d="M593 62 C726 153 648 214 802 251 S1055 316 1255 190"/>
+ <path d="M590 95 C705 179 629 240 785 277 S1060 342 1255 218"/>
+ <path d="M602 126 C686 205 613 267 769 302 S1066 370 1255 246"/>
+</g>
+<path d="M40 42 H1160" stroke="#E5EBEF" stroke-opacity=".23"/>
+<path d="M40 398 H1160" stroke="#E5EBEF" stroke-opacity=".22"/>
+<path d="M40 42 H195" stroke="url(#accent)" stroke-width="2.6"/>
+<text x="58" y="78" fill="#CFD6DC" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3.2">DIU FOUNDRY  /  ENGINEERING NOTES</text>
+<text x="58" y="168" fill="#F1F3F4" font-family="Arial, Helvetica, sans-serif" font-size="61" font-weight="700" letter-spacing="-1.8">VOIDTRUST</text>
+<rect x="60" y="190" width="80" height="3" rx="1.5" fill="url(#accent)"/>
+<text x="58" y="226" fill="#AEB9C2" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2.1">CONTINUOUS TRUST / CRYPTOGRAPHY</text>
+<text x="58" y="270" fill="#E1E6E9" font-family="Arial, Helvetica, sans-serif" font-size="19">Trust is a decision that has to be earned again.</text>
+<text x="58" y="360" fill="#7F8B95" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="2.2">MATERIAL STUDY   /   SYSTEMS THINKING   /   PRODUCT CRAFT</text>
+<circle cx="58" cy="386" r="3" fill="#BBA8FF"/><path d="M70 386 H245" stroke="url(#accent)" stroke-width="1.2" stroke-opacity=".72"/>
+<text x="1155" y="78" text-anchor="end" fill="#7F8B95" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2">FIELD STUDY  /  06</text>
+<g transform="translate(930 222)">
+ <circle r="168" fill="none" stroke="#DFE6EC" stroke-opacity=".1" stroke-width="1"/>
+ <circle r="147" fill="none" stroke="url(#metal)" stroke-opacity=".34" stroke-width="1.2"/>
+ <circle r="129" fill="none" stroke="#DFE6EC" stroke-opacity=".12" stroke-width="1" stroke-dasharray="1.5 7"/>
+</g>
+<g transform="translate(930 222)" stroke-linecap="round" stroke-linejoin="round"><circle r="154" fill="none" stroke="#DCE3EA" stroke-opacity=".12" stroke-width="1"/><circle r="126" fill="none" stroke="#DCE3EA" stroke-opacity=".12" stroke-width="1" stroke-dasharray="2 8"/><circle r="98" fill="none" stroke="url(#accent)" stroke-opacity=".48" stroke-width="1.5"/><rect x="-64" y="-11" width="128" height="104" rx="16" fill="#0A1015" stroke="url(#metal)" stroke-width="3"/><path d="M-43 -11 V-48 A43 43 0 0 1 43 -48 V-11" fill="none" stroke="url(#accent)" stroke-width="9"/><circle cx="0" cy="32" r="14" fill="#BBA8FF"/><path d="M0 44 V61" stroke="#65D6E5" stroke-width="7"/><path d="M-102 -82 C-76 -112 -41 -126 0 -126 M102 82 C76 112 41 126 0 126" fill="none" stroke="#65D6E5" stroke-width="2" stroke-opacity=".7"/><circle cx="-103" cy="-83" r="5" fill="#BBA8FF"/><circle cx="103" cy="83" r="5" fill="#65D6E5"/></g>
+<g stroke="#D5DEE5" stroke-opacity=".42" stroke-width="1.2"><path d="M1114 160 H1154 M1134 140 V180"/><path d="M1096 292 H1140 M1118 270 V314"/></g>
+<text x="1155" y="376" text-anchor="end" fill="#D2D9DF" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2">DIU / VOIDTRUST</text>
+</svg>
