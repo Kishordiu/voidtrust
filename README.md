@@ -1,6 +1,4 @@
-# VOIDTRUST
-
-![VOIDTRUST cinematic hero](https://capsule-render.vercel.app/api?type=rect&color=0:080808,100:202020&height=230&text=VOIDTRUST&fontColor=F3F3EE&fontSize=40&fontAlignY=38&desc=CONTINUOUS%20TRUST%20%2F%20CRYPTOGRAPHY&descColor=999991&descSize=12&descAlignY=66&animation=fadeIn)
+![VOIDTRUST — bespoke brushed-metal project artwork](./assets/readme-metal-hero.svg)
 
 > **CONTINUOUS TRUST / CRYPTOGRAPHY.**
 
